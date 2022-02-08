@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <title> test menu</title>
+    <style>
+      body{
+          margin: 0px;
+      }
+
+      .menu {
+          display: block;
+          position: absolute;
+          height: 100%;
+          background-color: wheat;
+          width: 30px;
+
+          
+
+      }
+
+      .menu-item{
+          display:table-row;
+
+          padding: 10px 30px 10px 30px;
+          text-align: center;
+          position: relative;
+          cursor:pointer;
+          display: none;
+
+      }
+
+      .menu-item:hover {
+          background-color: violet;
+      }
+
+      .dropdown{
+          display: block;
+          background-color: turquoise;
+          position: absolute;
+          top: 0px;
+          left: 100%;
+          display: none;
+      }
+
+      .menu-item:hover .dropdown{
+          display: block;
+
+      }
+
+      .menu:hover {
+          background-color: sandybrown ;
+         display: block;
+         
+         position: absolute;
+         text-align: center;
+         width: 120px;
+         
+      }
+
+      .menu:hover .menu-item{
+          display: block;
+      }
+
+      .dropdown-item{
+          padding: 10px 30px 10px 30px;
+          white-space: nowrap;
+
+      }
+
+      .dropdown-item:hover{
+          background-color: yellowgreen;
+      }
+
+      .dropdown-item a{
+          color:saddlebrown;
+          text-decoration: none;
+      }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-item">
+            menu 1
+        <div class="dropdown">    
+            <div class="dropdown-item"> dropdown item </div>
+            <div class="dropdown-item"> dropdown item </div>
+            <div class="dropdown-item"> <a href="http://google.com"> google.com </a></div>
+        </div>
+    </div>    
+        <div class="menu-item">
+            menu 2
+        <div class="dropdown"> 
+            <div class="dropdown-item"> dropdown item </div>
+            <div class="dropdown-item"> dropdown item </div>
+            <div class="dropdown-item"> dropdown item </div>
+        </div>
+    </div>    
+        <div class="menu-item">
+            menu 3
+        <div class="dropdown"> 
+            <div class="dropdown-item"> dropdown item </div>
+            <div class="dropdown-item"> dropdown item </div>
+            <div class="dropdown-item"> dropdown item </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
+
+
+
+       
+
